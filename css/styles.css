@@ -7,11 +7,13 @@ body,td,th,p{
   color: #333;
   line-height: 1.5;
   position: relative;
+  height: 100%;
 }
 body {
   background-color: #fdfdfd;
   margin: 0;
   position:relative;
+  height: 100%;
 }
 ul, li {
   font-family: Arial, Helvetica, sans-serif;
@@ -39,7 +41,9 @@ article, aside, canvas, details, figcaption, figure, footer, header, hgroup, men
 }
 #maincontent {
   background-color: #f3f3f3;
-  min-height: 100%;
+  min-height: 100vh;
+  padding-bottom: 5em;
+  overflow: hidden;
 }
 #footer {
   background-color: #444;
@@ -50,6 +54,8 @@ article, aside, canvas, details, figcaption, figure, footer, header, hgroup, men
   text-align: center;
   text-transform: uppercase;
   width: 100%;
+  position: absolute;
+  bottom: 0;
 }
 /* ====================== Navigation ====================== */
 nav {
@@ -264,7 +270,7 @@ nav h1 a {
 }
 #reviews-list li {
   background-color: #fff;
-    border: 2px solid #f3f3f3;
+  border: 2px solid #f3f3f3;
   display: block;
   list-style-type: none;
   margin: 0 0 30px;
@@ -314,6 +320,12 @@ nav h1 a {
   #filtered-options {
     width: 40%;
     float: right;
+    margin-top: -51em;
+  }
+
+  #restaurants-list {
+    margin: 0 auto;
+    padding: 0;
   }
 
   h2 {
@@ -321,7 +333,12 @@ nav h1 a {
   }
 
   #center {
-    display: block;
+    display: flex;
+    margin: 1em auto;
+  }
+
+  #map {
+    height: 50em;
   }
 
 }

@@ -305,12 +305,12 @@ nav h1 a {
 
 @media screen and (min-width: 801px) {
   #map-container, .filter-options {
-    width: 60%;
+    width: 50%;
     float: left;
   }
 
   #filtered-options {
-    width: 40%;
+    width: 50%;
     float: right;
   }
 

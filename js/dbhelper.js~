@@ -150,7 +150,12 @@ class DBHelper {
    * Restaurant image URL.
    */
   static imageUrlForRestaurant(restaurant) {
-    return (`/img/${restaurant.photograph}`);
+    console.log(screen.width);
+    // if(screen.width > 500px) {
+      return (`/images/${restaurant.photograph}`);
+    // } else {
+      // return (`/images/${restautant.photograph[0]}`);
+    // }
   }
 
   /**

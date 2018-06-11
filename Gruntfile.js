@@ -21,14 +21,10 @@ module.exports = function(grunt) {
             suffix: ,
             quality:
             */
-            width: '30%',
-            suffix: '_small',
-            quality: 20
-          }, {
-            width: '50%',
-            suffix: '_large',
-            quality: 40
-          }]
+            width: '40%',
+            suffix: 'med',
+            quality: 30
+          }], 
         },
 
         /*

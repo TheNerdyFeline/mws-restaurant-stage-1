@@ -2,7 +2,7 @@ function registerServiceWorker() {
   if(!navigator.serviceWorker) return;
 
   console.log("testing");
-  navigator.serviceWorker.register('/js/sw.js').then(function() {
+  navigator.serviceWorker.register('/sw.js').then(function() {
     console.log('Registration Worked');
   }).catch(function(err) {
     console.log(err);
